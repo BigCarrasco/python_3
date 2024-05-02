@@ -12,9 +12,7 @@ Example(Input --> Output)
 ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"] --> "found the needle at position 5" 
 '''
 def find_needle(haystack):
-    for x in haystack:
-        if 'needle' in x:
-            position = haystack.index('needle')
-            print(f'found needle at position {position}')
-    
-find_needle(['a', 'b', 'needle', 'd', 'e', 'f', 'g', 'h'])
+    for x in range(len(haystack)):
+        if haystack[x] == 'needle':
+            return f'found the needle at position {x}'
+       
