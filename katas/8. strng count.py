@@ -14,9 +14,4 @@ str_count("", 'z'); // returns 0
 '''
 
 def str_count(strng, letter):
-    variable = []
-    for x in range(len(strng)):
-        if strng[x] == letter:
-            variable += strng[x]
-    return variable.count(letter)
-   
+    return strng.count(letter)
