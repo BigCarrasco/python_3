@@ -7,6 +7,4 @@ For example, when an array is passed like [19, 5, 42, 2, 77], the output should 
 
 '''
 def sum_two_smallest_numbers(numbers):
-    min_to_max = sorted(numbers)
-    sumatoria = min_to_max[0] + min_to_max[1]
-    return sumatoria
+    return sum(sorted(numbers)[:2])
