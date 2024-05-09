@@ -18,12 +18,7 @@ Examples
 
 '''
 def sequence_sum(begin, end, step):
-    if begin > end:
-        return 0
-    elif (end - begin) % step != 0:
-        end -= (end - begin) % step
-    num_terms = (end - begin) // step + 1
-    return (begin + end) * num_terms // 2
+    sum(range(begin, end+1, step))
 
 # Test cases
 print(sequence_sum(2, 6, 2))  # Output: 12 (2 + 4 + 6 = 12)
