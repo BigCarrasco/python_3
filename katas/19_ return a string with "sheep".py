@@ -7,6 +7,11 @@ def count_sheep(n):
             resultado += f"{x} sheep..."
     return resultado
         
+        
+###Refactor
+def count_sheep(n):
+    return ''.join(f"{i} sheep..." for i in range(1,n+1))
+
 ''' test cases for:
 
         count_sheep(0) -> ""
