@@ -19,6 +19,11 @@ def hero(bullets, dragons):
     else:
         return False
     
+    
+    ### R E F A C T O R ###
+def hero(bullets, dragons):
+    return bullets >= dragons * 2
+
 '''###test cases ###
 
         hero(7, 4) -> False
