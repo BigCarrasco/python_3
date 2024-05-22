@@ -15,6 +15,10 @@ def count_by(x, n):
             result = x * i
             arr.append(result)
     return arr
+### R E F A C T O R ###
+
+def count_by(x, n):
+    return [i * x for i in range(1, n + 1)]
 
 ''' ###TEST CASES 
         count_by(1, 5) -> [1, 2, 3, 4, 5])
